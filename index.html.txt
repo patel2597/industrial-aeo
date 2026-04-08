@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AEO Demo | Baroda Industrial Pumps</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "BIP-50 End Suction Centrifugal Pump",
+      "brand": {
+        "@type": "Brand",
+        "name": "Baroda Industrial Pumps"
+      },
+      "description": "High-efficiency centrifugal pump for chemical processing and water supply.",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Maximum Flow Rate",
+          "value": "1.33",
+          "unitCode": "MQS" 
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Total Dynamic Head",
+          "value": "225",
+          "unitCode": "MTR"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Motor Power",
+          "value": "3.7",
+          "unitCode": "KWT"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <h1>BIP-50 End Suction Centrifugal Pump</h1>
+    <p><em>Demonstration Page for AI Data Architecture (AEO/GEO)</em></p>
+
+    <hr>
+
+    <table border="1" cellpadding="10" style="border-collapse: collapse; width: 50%;">
+        <tr style="background-color: #f2f2f2;">
+            <th>Technical Specification</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td><strong>Max Flow Rate</strong></td>
+            <td>1.33 m³/hr</td>
+        </tr>
+        <tr>
+            <td><strong>Max Head</strong></td>
+            <td>225 Meters</td>
+        </tr>
+        <tr>
+            <td><strong>Power Rating</strong></td>
+            <td>3.7 kW (5 HP)</td>
+        </tr>
+    </table>
+
+    <p><strong>Engineer's Note:</strong> This data is mapped using UN/CEFACT unit codes (MQS, MTR, KWT) to ensure 100% citation accuracy in AI search engines.</p>
+</body>
+</html>
