@@ -36,41 +36,81 @@
       ]
     }
     </script>
-<style>
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f4f7f6; }
-    h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
-    table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-top: 20px; }
-    th, td { padding: 15px; border: 1px solid #ddd; text-align: left; }
-    th { background-color: #3498db; color: white; }
-    .aeo-badge { display: inline-block; background: #27ae60; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8em; margin-bottom: 20px; }
+    <style>
+    body { 
+        font-family: 'Segoe UI', Arial, sans-serif; 
+        line-height: 1.6; 
+        color: #333; 
+        max-width: 800px; 
+        margin: 40px auto; 
+        padding: 20px; 
+        background-color: #e9ecef; 
+    }
+
+    h1 { 
+        color: #2c3e50; 
+        text-transform: uppercase; 
+        letter-spacing: 1px;
+    }
+
+    /* THE NOTCHED CONTAINER */
+    .table-container {
+        background: #3498db; /* The border color */
+        padding: 2px; /* Border thickness */
+        
+        /* This creates the 15px notch at each corner */
+        clip-path: polygon(
+            15px 0%, calc(100% - 15px) 0%, 
+            100% 15px, 100% calc(100% - 15px), 
+            calc(100% - 15px) 100%, 15px 100%, 
+            0% calc(100% - 15px), 0% 15px
+        );
+    }
+
+    table { 
+        width: 100%; 
+        border-collapse: collapse; 
+        background: white; 
+        /* Matching the notch on the inner table */
+        clip-path: polygon(
+            15px 0%, calc(100% - 15px) 0%, 
+            100% 15px, 100% calc(100% - 15px), 
+            calc(100% - 15px) 100%, 15px 100%, 
+            0% calc(100% - 15px), 0% 15px
+        );
+    }
+
+    th, td { padding: 15px; border: 1px solid #dee2e6; text-align: left; }
+    th { background-color: #2c3e50; color: white; }
+    
+    .aeo-badge { 
+        display: inline-block; 
+        background: #27ae60; 
+        color: white; 
+        padding: 5px 15px; 
+        border-radius: 4px; 
+        font-weight: bold;
+        margin-bottom: 20px; 
+    }
 </style>
 </head>
 <body>
-    <h1>BIP-50 End Suction Centrifugal Pump</h1>
-    <div class="aeo-badge">AI-Optimized Data Asset</div>
-    <p><em>Demonstration Page for AI Data Architecture (AEO/GEO)</em></p>
+    <body>
+    <h1>Baroda Industrial Pumps</h1>
+    <div class="aeo-badge">ENGINEERING DATA VALIDATED</div>
 
-    <hr>
-
-    <table border="1" cellpadding="10" style="border-collapse: collapse; width: 50%;">
-        <tr style="background-color: #f2f2f2;">
-            <th>Technical Specification</th>
-            <th>Value</th>
-        </tr>
-        <tr>
-            <td><strong>Max Flow Rate</strong></td>
-            <td>1.33 m³/hr</td>
-        </tr>
-        <tr>
-            <td><strong>Max Head</strong></td>
-            <td>225 Meters</td>
-        </tr>
-        <tr>
-            <td><strong>Power Rating</strong></td>
-            <td>3.7 kW (5 HP)</td>
-        </tr>
-    </table>
-
-    <p><strong>Engineer's Note:</strong> This data is mapped using UN/CEFACT unit codes (MQS, MTR, KWT) to ensure 100% citation accuracy in AI search engines.</p>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Specification</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Max Head</td>
+                <td>225 Meters</td>
+            </tr>
+            </table>
+    </div>
+</body>
 </body>
 </html>
